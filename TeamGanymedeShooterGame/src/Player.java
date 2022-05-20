@@ -99,7 +99,7 @@ public class Player {
     public void keyPressed(int k)
     {
         if(k == KeyEvent.VK_UP && playergrounded) {
-            playervelocity[1] = -40;
+            playervelocity[1] = -15;
         }
         if(k == KeyEvent.VK_LEFT && playergrounded) {
             playervelocity[0] = -10;

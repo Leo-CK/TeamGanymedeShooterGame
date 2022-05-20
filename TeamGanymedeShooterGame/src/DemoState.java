@@ -6,6 +6,7 @@ public class DemoState extends GameState{
     private Player player1;
     private Ground ground1;
     private Sky sky1;
+    private GreatBombard bombard1;
 
     public DemoState(GameStateManager gsm)
     {
@@ -21,6 +22,8 @@ public class DemoState extends GameState{
         ground1.init();
         sky1 = new Sky();
         sky1.init();
+        bombard1 = new GreatBombard();
+        bombard1.init();
     }
 
     @Override
@@ -33,6 +36,7 @@ public class DemoState extends GameState{
     public void draw(Graphics g)
     {
         sky1.draw(g);
+        bombard1.draw(g);
         ground1.draw(g);
         player1.draw(g);
     }
